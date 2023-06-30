@@ -2,6 +2,7 @@ import os
 import platform
 import snakemake
 
+os.chdir(config['wd'])
 
 def get_config_file(path):
     for fname in os.listdir(path):
